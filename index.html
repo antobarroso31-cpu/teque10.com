@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tequeñísimos Gourmet | Los Mejores Tequeños Artesanales & Delivery</title>
+  <meta name="description" content="Tequeños artesanales con 100% queso llanero derretido. Pídelos fritos y calientes o congelados para tu Airfryer. Delivery rápido y combos para fiestas.">
+  <meta name="keywords" content="tequeños, tequeños venezolanos, venta de tequeños, tequeños congelados, airfryer, comida venezolana, pasapalos, delivery tequeños">
+  
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:title" content="Tequeñísimos Gourmet | Tequeños Artesanales">
+  <meta property="og:description" content="Crujientes por fuera, puro queso derretido por dentro. ¡Pide directo a tu casa por WhatsApp!">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span>🔥 ¡Envío <strong>GRATIS</strong> en pedidos sobre $25!</span>
+    <span class="coupon-pill">Cupón: <strong>TEQUE10</strong> (10% OFF)</span>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo-wrap" id="logoBrand">
+        <div class="logo-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5"></path>
+            <path d="M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <h1>TEQUEÑÍSIMOS</h1>
+          <span class="subtext">Tequeñería Artesanal</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#menu" class="nav-link active">Menú</a></li>
+          <li><a href="#comboBuilder" class="nav-link">Arma tu Fiesta</a></li>
+          <li><a href="#airfryerGuide" class="nav-link">Guía Airfryer</a></li>
+          <li><a href="#opiniones" class="nav-link">Opiniones</a></li>
+          <li><a href="#faq" class="nav-link">Zonas & FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartToggleBtn" aria-label="Abrir Carrito">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span>Carrito</span>
+          <span class="cart-badge" id="cartBadgeCount">0</span>
+        </button>
+
+        <a href="#menu" class="btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">
+          Ordenar Ahora
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>✨ Tradición Venezolana de Calidad Premium</span>
+        </div>
+        <h1 class="hero-title">
+          Los Tequeños Más <span class="text-gold">Crujientes</span> y Rellenos de Queso
+        </h1>
+        <p class="hero-description">
+          Elaborados a mano con masa hojaldrada artesanal y <strong>100% queso llanero derretido</strong> de verdad. Pídelos recién fritos calientitos para disfrutar ya, o congelados listos para tu Airfryer en 7 minutos.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn-primary" id="heroOrderBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+            Ver Menú Completo
+          </a>
+          <a href="#comboBuilder" class="btn-secondary" id="heroCustomBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            Armar Combo Fiesta
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>+50,000</h3>
+            <p>Tequeños Entregados</p>
+          </div>
+          <div class="stat-item">
+            <h3>4.9 ⭐</h3>
+            <p>Calificación de Clientes</p>
+          </div>
+          <div class="stat-item">
+            <h3>35 min</h3>
+            <p>Tiempo Promedio Delivery</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-card">
+          <img src="assets/images/hero.jpg" alt="Tequeños venezolanos artesanales con queso derretido y salsas">
+          
+          <div class="hero-rating-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>4.9 / 5.0 Gourmet</span>
+          </div>
+
+          <div class="hero-floating-pill">
+            <div class="floating-icon">🧀</div>
+            <div class="floating-text">
+              <h5>Queso Blanco Llanero Extra</h5>
+              <p>Masa suave que no se revienta</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Highlights -->
+  <section class="features-section">
+    <div class="container features-grid">
+      <div class="feature-box">
+        <div class="feature-icon-wrap">🧀</div>
+        <h4>100% Queso Llanero</h4>
+        <p>Relleno generoso de punta a punta con queso auténtico, elástico y con el toque justo de sal.</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="feature-icon-wrap">🌪️</div>
+        <h4>Perfectos para Airfryer</h4>
+        <p>Masa especial con balance de grasa para que doren crujientes en 7 minutos sin derramarse.</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="feature-icon-wrap">🚀</div>
+        <h4>Delivery Caliente y Rápido</h4>
+        <p>Empaque térmico ventilado que conserva el calor y el crujido intacto hasta tu puerta.</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="feature-icon-wrap">🎉</div>
+        <h4>Packs para Fiestas & Eventos</h4>
+        <p>Bandejas desde 12 hasta 100 unidades con salsas caseras de regalo para tus reuniones.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Combo Builder ("Arma tu Fiesta") -->
+  <section class="builder-section" id="comboBuilder">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Personalización Total</span>
+        <h2 class="section-title">Arma tu Combo Fiesta a tu Medida</h2>
+        <p class="section-subtitle">Elige el tamaño de tu pack, mezcla tus sabores favoritos, escoge tus salsas caseras y recíbelos listos para tu reunión.</p>
+      </div>
+
+      <div class="builder-card">
+        <div class="builder-steps-grid">
+          <!-- Step 1: Pack Size -->
+          <div class="step-col">
+            <h4><span class="step-num">1</span> Elige el Tamaño</h4>
+            <div class="pack-options">
+              <div class="pack-radio" data-name="Pack Antojo" data-qty="12" data-sauces="1" data-price="8.00">
+                <div class="pack-info">
+                  <h5>Pack Antojo (12 Tequeños)</h5>
+                  <span>Incluye 1 salsa de regalo</span>
+                </div>
+                <div class="pack-price">$8.00</div>
+              </div>
+
+              <div class="pack-radio selected" data-name="Pack Familiar" data-qty="25" data-sauces="2" data-price="15.00">
+                <div class="pack-info">
+                  <h5>Pack Familiar (25 Tequeños) ⭐</h5>
+                  <span>Incluye 2 salsas de regalo</span>
+                </div>
+                <div class="pack-price">$15.00</div>
+              </div>
+
+              <div class="pack-radio" data-name="Mega Fiesta" data-qty="50" data-sauces="3" data-price="28.00">
+                <div class="pack-info">
+                  <h5>Mega Fiesta (50 Tequeños)</h5>
+                  <span>Incluye 3 salsas de regalo</span>
+                </div>
+                <div class="pack-price">$28.00</div>
+              </div>
+
+              <div class="pack-radio" data-name="Catering Evento" data-qty="100" data-sauces="5" data-price="52.00">
+                <div class="pack-info">
+                  <h5>Catering Evento (100 Tequeños)</h5>
+                  <span>Incluye 5 salsas de regalo</span>
+                </div>
+                <div class="pack-price">$52.00</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Flavors Selection -->
+          <div class="step-col">
+            <h4><span class="step-num">2</span> Elige los Sabores</h4>
+            <div class="choice-pills">
+              <label class="choice-pill selected">
+                <span>🧀 Queso Tradicional Llanero</span>
+                <input type="checkbox" class="flavor-checkbox" value="Queso Tradicional" checked>
+              </label>
+
+              <label class="choice-pill">
+                <span>🍓 Guayaba & Queso Llanero</span>
+                <input type="checkbox" class="flavor-checkbox" value="Guayaba y Queso">
+              </label>
+
+              <label class="choice-pill">
+                <span>🍫 Chocolate Nutella & Avellanas</span>
+                <input type="checkbox" class="flavor-checkbox" value="Chocolate Nutella">
+              </label>
+
+              <label class="choice-pill">
+                <span>🥓 Tocineta Ahumada & Cheddar</span>
+                <input type="checkbox" class="flavor-checkbox" value="Tocineta y Cheddar">
+              </label>
+
+              <label class="choice-pill">
+                <span>🥐 Estilo Cachito (Jamón & Queso)</span>
+                <input type="checkbox" class="flavor-checkbox" value="Jamón y Queso">
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 3: Sauces Selection -->
+          <div class="step-col">
+            <h4><span class="step-num">3</span> Elige tus Salsas</h4>
+            <div class="choice-pills">
+              <label class="choice-pill selected">
+                <span>🥑 Guasacaca Criolla Especial</span>
+                <input type="checkbox" class="sauce-checkbox" value="Guasacaca Criolla" checked>
+              </label>
+
+              <label class="choice-pill selected">
+                <span>🧄 Tártara de Ajo y Cilantro</span>
+                <input type="checkbox" class="sauce-checkbox" value="Tártara de Ajo" checked>
+              </label>
+
+              <label class="choice-pill">
+                <span>🍯 Miel Mostaza Ahumada</span>
+                <input type="checkbox" class="sauce-checkbox" value="Miel Mostaza">
+              </label>
+
+              <label class="choice-pill">
+                <span>🍅 Salsa Rosada Cóctel</span>
+                <input type="checkbox" class="sauce-checkbox" value="Salsa Rosada">
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Builder Footer with Summary and Action -->
+        <div class="builder-footer">
+          <div class="cooking-style-toggle">
+            <label>¿Cómo los prefieres?</label>
+            <div class="toggle-pills">
+              <div class="toggle-pill active" data-prep="Fritos Listos">🔥 Fritos (Calientes)</div>
+              <div class="toggle-pill" data-prep="Congelados Crudos">❄️ Congelados (Airfryer)</div>
+            </div>
+          </div>
+
+          <div class="builder-checkout-wrap">
+            <div class="builder-total-display">
+              <span>Total del Combo</span>
+              <h3 id="builderPriceDisplay">$15.00</h3>
+            </div>
+            <button class="btn-primary" id="addComboToCartBtn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+              Agregar Combo al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog / Menu Section -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestra Carta</span>
+        <h2 class="section-title">Elige tus Tequeños Favoritos</h2>
+        <p class="section-subtitle">Recién fritos y crujientes para comer al instante o congelados en bandejas para tu congelador.</p>
+      </div>
+
+      <div class="catalog-controls">
+        <!-- Search bar -->
+        <div class="catalog-search-bar">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="catalogSearch" placeholder="Buscar por sabor, queso, chocolate...">
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="category-tabs">
+          <button class="category-tab active" data-category="todos">Todos los Productos</button>
+          <button class="category-tab" data-category="populares">⭐ Más Populares</button>
+          <button class="category-tab" data-category="clasicos">🧀 Clásicos de Queso</button>
+          <button class="category-tab" data-category="dulces">🍓 Dulces & Fusión</button>
+          <button class="category-tab" data-category="especiales">🥓 Especiales Salados</button>
+          <button class="category-tab" data-category="combos">🍱 Packs Fiesta</button>
+          <button class="category-tab" data-category="salsas">🥣 Salsas Artesanales</button>
+        </div>
+      </div>
+
+      <!-- Dynamic Product Grid -->
+      <div class="products-grid" id="catalogGrid">
+        <!-- Injected dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Airfryer & Cooking Guide Interactive Section -->
+  <section class="guide-section" id="airfryerGuide">
+    <div class="container guide-grid">
+      <div class="guide-intro">
+        <span class="section-tag">Guía del Maestro Tequeñero</span>
+        <h2 class="section-title" style="margin-bottom: 20px;">Cómo Lograr el Tequeño Perfecto en Casa</h2>
+        <p style="color: var(--text-light); margin-bottom: 24px; font-size: 1.05rem;">
+          Nuestros tequeños están formulados con una masa balanceada que <strong>nunca se abre ni pierde queso</strong>. Sigue nuestras instrucciones de temperatura exacta para que te queden dorados por fuera y ultra derretidos por dentro.
+        </p>
+
+        <div class="guide-tabs">
+          <button class="guide-tab-btn active" data-method="airfryer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><circle cx="12" cy="12" r="3"></circle></svg>
+            En Airfryer (Recomendado)
+          </button>
+          <button class="guide-tab-btn" data-method="sarten">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M7 12a5 5 0 0 0 10 0"></path></svg>
+            Sartén con Aceite
+          </button>
+          <button class="guide-tab-btn" data-method="horno">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="7" y1="8" x2="17" y2="8"></line></svg>
+            Horno Convencional
+          </button>
+        </div>
+
+        <div style="background: rgba(245, 158, 11, 0.1); border-left: 3px solid var(--primary); padding: 14px 18px; border-radius: var(--radius-sm); color: var(--primary-light); font-size: 0.92rem;">
+          💡 <strong>Tip secreto del Chef:</strong> No los descongeles antes de cocinar. Deben ir directamente del freezer a la Airfryer o al aceite bien caliente para que el queso estire al máximo.
+        </div>
+      </div>
+
+      <div class="guide-card-content">
+        <div class="guide-metrics">
+          <div class="guide-metric-box">
+            <span>Temperatura</span>
+            <strong id="guideTemp">180°C / 360°F</strong>
+          </div>
+          <div class="guide-metric-box">
+            <span>Tiempo Estimado</span>
+            <strong id="guideTime">6 - 8 min</strong>
+          </div>
+          <div class="guide-metric-box">
+            <span>Dificultad</span>
+            <strong>Muy Fácil ⚡</strong>
+          </div>
+        </div>
+
+        <p id="guideTip" style="font-size: 0.95rem; color: #fff; margin-bottom: 20px; font-weight: 600;">
+          Rocía una capa muy fina de aceite en aerosol. No los amontones para que el aire circule y queden extra crujientes.
+        </p>
+
+        <ul class="guide-steps-list" id="guideStepsList">
+          <li class="guide-step-item">
+            <span class="guide-step-num">1</span>
+            <span>Precalienta tu Airfryer por 3 minutos a 180°C.</span>
+          </li>
+          <li class="guide-step-item">
+            <span class="guide-step-num">2</span>
+            <span>Coloca los tequeños congelados directamente en la canasta con 1 cm de separación.</span>
+          </li>
+          <li class="guide-step-item">
+            <span class="guide-step-num">3</span>
+            <span>Rocía apenas una gota o spray de aceite comestible.</span>
+          </li>
+          <li class="guide-step-item">
+            <span class="guide-step-num">4</span>
+            <span>Cocina de 6 a 8 minutos. A mitad de tiempo (minuto 4), dales una pequeña sacudida o vuelta.</span>
+          </li>
+          <li class="guide-step-item">
+            <span class="guide-step-num">5</span>
+            <span>¡Retira cuando estén dorados y el queso esté a punto de asomar!</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews / Opiniones -->
+  <section class="reviews-section" id="opiniones">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Clientes Felices</span>
+        <h2 class="section-title">Lo Que Dicen Nuestros Amantes del Queso</h2>
+        <p class="section-subtitle">Más de 1,200 pedidos entregados con una satisfacción de 4.9 estrellas.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Los mejores tequeños que he probado en años. La masa es finita, súper crocante y tienen queso de verdad hasta la última esquina. Los pedí para el cumple de mi hijo y volaron en 10 minutos."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">MG</div>
+            <div class="author-info">
+              <h5>Mariana Gómez</h5>
+              <span>✓ Compradora Verificada • Pack 50 Fiesta</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "El tequeño de guayaba con queso es de otro planeta. Hice caso a la guía de Airfryer y quedaron igualitos como si fueran fritos en restaurante. La salsa tártara de ajo es una delicia."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">CR</div>
+            <div class="author-info">
+              <h5>Carlos Rodríguez</h5>
+              <span>✓ Comprador Verificado • Guayaba & Chocolate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Súper fácil hacer el pedido por WhatsApp. Me respondieron enseguida y el delivery llegó en menos de 40 minutos súper calientito. El tequeño con tocineta y cheddar es adictivo."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">VP</div>
+            <div class="author-info">
+              <h5>Valeria Peña</h5>
+              <span>✓ Compradora Verificada • Combo Especial</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Delivery Coverage & FAQ -->
+  <section class="faq-section" id="faq">
+    <div class="container faq-grid">
+      <!-- FAQ Accordion -->
+      <div>
+        <span class="section-tag">Preguntas Frecuentes</span>
+        <h2 class="section-title" style="margin-bottom: 24px;">¿Tienes Dudas? Te Respondemos</h2>
+
+        <div class="faq-accordion">
+          <div class="faq-item active">
+            <div class="faq-question">
+              <span>¿Cuánto tiempo duran los tequeños congelados?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="faq-answer">
+              Nuestros tequeños congelados vienen sellados herméticamente y duran hasta <strong>3 meses</strong> en tu congelador sin perder sabor, frescura ni textura de la masa.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>¿Qué métodos de pago aceptan?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="faq-answer">
+              Aceptamos Pago Móvil, Zelle, Transferencia bancaria, Efectivo (en divisas o moneda local al recibir) y Tarjeta de Débito/Crédito al momento de la entrega.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>¿Cómo funciona el pedido por WhatsApp?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="faq-answer">
+              Al armar tu carrito y dar clic en "Completar por WhatsApp", la página te generará un mensaje automático estructurado con tus productos, salsas, dirección y total. Solo presionas enviar y coordinamos la entrega.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>¿Hacen pedidos para eventos grandes o bodas?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="faq-answer">
+              ¡Sí! Tenemos paquetes de catering de 100, 200 y hasta 1,000 unidades con precio mayorista especial. Contáctanos por WhatsApp con al menos 24 horas de anticipación.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Delivery Zones Card -->
+      <div class="delivery-box">
+        <h3>🚀 Zonas y Horarios de Entrega</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">
+          Cubrimos las principales zonas de la ciudad con servicio de motorizado propio para garantizar que tus tequeños lleguen intactos.
+        </p>
+
+        <ul class="delivery-zones-list">
+          <li class="zone-item">
+            <span>📍 Zona Centro & Alrededores</span>
+            <span class="zone-badge">25 - 35 min</span>
+          </li>
+          <li class="zone-item">
+            <span>📍 Zona Norte & Residencial</span>
+            <span class="zone-badge">30 - 40 min</span>
+          </li>
+          <li class="zone-item">
+            <span>📍 Zona Este & Centros Comerciales</span>
+            <span class="zone-badge">35 - 45 min</span>
+          </li>
+          <li class="zone-item">
+            <span>📍 Retiro en Tienda / Pick-Up</span>
+            <span class="zone-badge" style="background: rgba(245, 158, 11, 0.15); color: var(--primary);">¡Listo en 15 min!</span>
+          </li>
+        </ul>
+
+        <div style="background: var(--bg-darker); padding: 16px; border-radius: var(--radius-sm); border: 1px dashed var(--border-gold); text-align: center;">
+          <strong style="color: var(--accent-gold); display: block; margin-bottom: 4px;">⏰ Horario de Atención y Despacho</strong>
+          <span style="font-size: 0.88rem; color: var(--text-light);">Martes a Domingo de 11:00 AM a 10:00 PM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo-wrap" style="margin-bottom: 16px;">
+          <div class="logo-icon">🧀</div>
+          <div class="logo-text">
+            <h3 style="font-size: 1.3rem; color: #fff;">TEQUEÑÍSIMOS</h3>
+            <span class="subtext">Tequeñería Gourmet</span>
+          </div>
+        </div>
+        <p>
+          Pasión artesanal por el verdadero tequeño venezolano. Masa crujiente, queso de primera y recetas innovadoras para tus mejores momentos.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-btn" title="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="social-btn" title="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+          </a>
+          <a href="https://wa.me/584121234567" target="_blank" class="social-btn" title="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Menú Rápido</h5>
+        <ul class="footer-links">
+          <li><a href="#menu">Tequeños Clásicos</a></li>
+          <li><a href="#menu">Tequeños Dulces</a></li>
+          <li><a href="#menu">Tequeños Especiales</a></li>
+          <li><a href="#comboBuilder">Packs para Fiestas</a></li>
+          <li><a href="#menu">Salsas Caseras</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Información</h5>
+        <ul class="footer-links">
+          <li><a href="#airfryerGuide">Instrucciones de Cocción</a></li>
+          <li><a href="#faq">Zonas de Cobertura</a></li>
+          <li><a href="#opiniones">Testimonios de Clientes</a></li>
+          <li><a href="#faq">Preguntas Frecuentes</a></li>
+          <li><a href="#cartOverlay" onclick="openCheckoutModal()">Hacer un Pedido</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contacto Directo</h5>
+        <p>📍 Centro de Producción & Delivery Express</p>
+        <p>📱 WhatsApp: +58 412-1234567</p>
+        <p>✉️ pedidos@tequenisimos.com</p>
+        <p>⏰ Mar - Dom: 11:00 AM - 10:00 PM</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Tequeñísimos Gourmet. Todos los derechos reservados.</p>
+      <p>Hecho con ❤️ para amantes del queso • Listo para GitHub Pages</p>
+    </div>
+  </footer>
+
+  <!-- Slide-Over Shopping Cart Drawer -->
+  <div class="cart-overlay" id="cartOverlay">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          Tu Pedido
+        </h3>
+        <button class="close-cart-btn" id="closeCartBtn" aria-label="Cerrar Carrito">&times;</button>
+      </div>
+
+      <div class="cart-items-list" id="cartItemsList">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-coupon-wrap">
+          <input type="text" id="cartCouponInput" placeholder="Código cupón (ej: TEQUE10)">
+          <button id="applyCouponBtn">Aplicar</button>
+        </div>
+
+        <div class="cart-summary-line">
+          <span>Subtotal:</span>
+          <span id="cartSubtotal">$0.00</span>
+        </div>
+        <div class="cart-summary-line" style="color: var(--accent-green);">
+          <span>Descuento cupón:</span>
+          <span id="cartDiscount">-$0.00</span>
+        </div>
+        <div class="cart-summary-line">
+          <span>Envío Delivery:</span>
+          <span id="cartDelivery">$0.00</span>
+        </div>
+        <div class="cart-summary-line total-line">
+          <span>Total a Pagar:</span>
+          <span id="cartTotal" class="text-gold">$0.00</span>
+        </div>
+
+        <button class="btn-primary cart-checkout-btn" onclick="openCheckoutModal()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Confirmar y Enviar Pedido
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal (Customer Info & WhatsApp Order) -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3>📋 Datos de Entrega del Pedido</h3>
+        <button class="close-cart-btn" onclick="closeCheckoutModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="checkoutForm" onsubmit="sendWhatsAppOrder(event)">
+          <div class="form-group">
+            <label for="orderName">Nombre Completo *</label>
+            <input type="text" id="orderName" required placeholder="Ej: Juan Pérez">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="orderPhone">Teléfono / WhatsApp *</label>
+              <input type="tel" id="orderPhone" required placeholder="Ej: 0412 1234567">
+            </div>
+            <div class="form-group">
+              <label for="orderZone">Zona de Entrega *</label>
+              <select id="orderZone" required>
+                <option value="Zona Centro">Zona Centro ($2.50)</option>
+                <option value="Zona Norte">Zona Norte ($2.50)</option>
+                <option value="Zona Este">Zona Este ($2.50)</option>
+                <option value="Pick-Up (Retiro en tienda)">Pick-Up en Tienda (Gratis)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="orderAddress">Dirección Exacta (Calle, Edif, Casa, Punto de Referencia) *</label>
+            <textarea id="orderAddress" rows="2" required placeholder="Ej: Urb. Los Mangos, Edif. La Colina, Piso 4, Apto 4B. Frente a la panadería."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="orderPayment">Forma de Pago *</label>
+            <select id="orderPayment" required>
+              <option value="Pago Móvil">📱 Pago Móvil</option>
+              <option value="Zelle">💵 Zelle</option>
+              <option value="Efectivo en Divisas al recibir">💵 Efectivo al Recibir</option>
+              <option value="Transferencia Bancaria">🏦 Transferencia Bancaria</option>
+              <option value="Punto de Venta / Tarjeta">💳 Tarjeta / Punto de Venta</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="orderNotes">Notas adicionales (Opcional)</label>
+            <input type="text" id="orderNotes" placeholder="Ej: Tequeños bien dorados, salsas aparte, tocar timbre">
+          </div>
+
+          <button type="submit" class="whatsapp-submit-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            Enviar Pedido por WhatsApp
+          </button>
+          <p style="text-align: center; font-size: 0.78rem; color: var(--text-muted); margin-top: 10px;">
+            Se abrirá WhatsApp con el resumen de tu compra listo para enviar directamente a la cocina.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Detail Modal -->
+  <div class="modal-overlay" id="detailModal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 id="detailTitle">Detalles del Producto</h3>
+        <button class="close-cart-btn" onclick="closeDetailModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img id="detailImg" src="" alt="Detalle tequeño" style="width: 100%; height: 260px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 20px;">
+        <p id="detailDesc" style="color: var(--text-light); font-size: 1rem; margin-bottom: 18px;"></p>
+        
+        <div style="background: var(--bg-darker); padding: 14px; border-radius: var(--radius-sm); margin-bottom: 14px;">
+          <strong style="color: var(--primary); font-size: 0.85rem; display: block; margin-bottom: 4px;">🌾 Ingredientes:</strong>
+          <span id="detailIngredients" style="font-size: 0.88rem; color: var(--text-muted);"></span>
+        </div>
+
+        <div style="background: var(--bg-darker); padding: 14px; border-radius: var(--radius-sm); margin-bottom: 20px;">
+          <strong style="color: var(--primary); font-size: 0.85rem; display: block; margin-bottom: 4px;">⏱️ Tiempo en Airfryer:</strong>
+          <span id="detailAirfryer" style="font-size: 0.88rem; color: var(--text-muted);"></span>
+        </div>
+
+        <button class="btn-primary" id="detailAddBtn" style="width: 100%;">
+          Agregar a Mi Pedido
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Success Modal -->
+  <div class="modal-overlay" id="orderSuccessModal">
+    <div class="modal-window" style="text-align: center; padding: 36px 24px;">
+      <div style="width: 68px; height: 68px; background: rgba(16, 185, 129, 0.2); color: #10b981; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 2.2rem; margin-bottom: 18px;">
+        ✓
+      </div>
+      <h2 style="font-size: 1.8rem; margin-bottom: 8px; color: #fff;">¡Pedido Enviado con Éxito!</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
+        Tu pedido <strong id="successOrderRef" style="color: var(--primary);">#TQ-0000</strong> ha sido transferido a WhatsApp. En breve nuestro equipo confirmará el pago y el tiempo de despacho.
+      </p>
+
+      <div style="background: var(--bg-darker); padding: 16px; border-radius: var(--radius-md); margin-bottom: 24px;">
+        <span style="font-size: 0.85rem; color: var(--text-muted);">Total de la compra:</span>
+        <h3 id="successOrderTotal" class="text-gold" style="font-size: 1.6rem;">$0.00</h3>
+      </div>
+
+      <button class="btn-primary" onclick="closeSuccessModal()" style="width: 100%;">
+        ¡Entendido, muchas gracias!
+      </button>
+    </div>
+  </div>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+    <button class="fab-whatsapp" id="floatingCartBtn" title="Ver Carrito de Tequeños" style="background: var(--primary); color: #0f172a; position: relative;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+      <span class="cart-badge" id="floatingBadgeCount" style="position: absolute; top: -4px; right: -4px; background: #ef4444; color: #fff;">0</span>
+    </button>
+
+    <a href="https://wa.me/584121234567?text=¡Hola!%20Quisiera%20información%20sobre%20los%20tequeños" target="_blank" class="fab-whatsapp" title="Escribir por WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    </a>
+  </div>
+
+  <!-- App Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
